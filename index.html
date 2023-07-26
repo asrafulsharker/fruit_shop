@@ -13,14 +13,67 @@
 <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
 
 <!-- google font end  -->
+
+
+
+
+
+
+
+
+<style>
+  .overlay-container {
+    position: relative;
+  }
+
+  .overlay-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust the color and opacity as needed */
+    z-index: 1;
+  }
+
+  .content {
+    position: relative;
+    z-index: 2;
+  }
+</style>
 </head>
 <body class="container mx-auto font-['Lato']">
 
     <!-- nav start  -->
 
-    <nav class="rounded-full bg-[#F85559]">
+    <nav class="rounded-full lg:bg-[#F85559] sm:bg-[#FFFF] md:bg-[#F85559]">
         <div class="navbar ">
-            <div class="navbar-start  md:navbar-end">
+          <div class="navbar-center    lg:hidden md:hidden" >
+            <img src="./images/logo.png" alt="">
+            <a class=" text-2xl text-black font-[700] ml-4">Fruit Burst</a>
+         
+        </div>
+        <div class="navbar-end  lg:hidden md:hidden ">
+          <div class="dropdown">
+            <label tabindex="0" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-black " fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+            </label>
+            <ul tabindex="0" class="flex content-center justify-center menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-auto ml-0 font-[500] ml-10 overflow-hidden ">
+                <li><a>Home</a></li>
+                <li><a>About Us</a></li>
+                <li><a>Shop</a></li>
+                <li><a>All Fruit</a></li>
+            </ul>
+          </div>
+          <ul class="menu menu-horizontal px-1 hidden  lg:flex text-white">
+            <li><a>Home</a></li>
+            <li><a>About Us</a></li>
+            <li><a>Shop</a></li>
+            <li><a>All Fruit</a></li>
+          </ul>
+        </div>
+            <div class="navbar-start  hidden   lg:flex md:flex">
               <div class="dropdown">
                 <label tabindex="0" class="btn btn-ghost lg:hidden">
                   <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
@@ -39,7 +92,7 @@
                 <li><a>All Fruit</a></li>
               </ul>
             </div>
-            <div class="navbar-center    md:navbar-start">
+            <div class="navbar-center hidden   lg:flex md:flex">
                 <img src="./images/logo.png" alt="">
                 <a class=" text-2xl text-white font-[700] ml-4">Fruit Burst</a>
              
@@ -56,6 +109,75 @@
 
 
     <!-- hero section start  -->
+
+    <div class="carousel w-full mt-10">
+      <div id="slide1" class="carousel-item relative w-full">
+        <div class="overlay-container">
+          <div class="hero-content text-center absolute flex justify-center align-center w-full h-full z-10">
+            <div class="max-w-md">
+              <h1 class="text-5xl font-bold text-white font-black	">Exotic tastes at your doorstep</h1>
+              <p class="py-6 text-white">We supply highly quality organic products</p>
+              <button class="btn bg-[#F85559] text-white border-0">Shop Now</button>
+            </div>
+          </div>
+          <img src="./images/banner1.png" class="w-full h-full" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2 z-10">
+            <a href="#slide4" class="btn btn-circle z-10 text-white bg-[#000] border-0">❮</a> 
+            <a href="#slide2" class="btn btn-circle z-10 text-white bg-[#000] border-0">❯</a>
+          </div>
+        </div>
+       
+      </div> 
+      <div id="slide2" class="carousel-item relative w-full">
+        <div class="overlay-container">
+          <div class="hero-content text-center absolute flex justify-center align-center w-full h-full z-10">
+            <div class="max-w-md">
+              <h1 class="text-5xl font-bold text-white font-black	">Exotic tastes at your doorstep</h1>
+              <p class="py-6 text-white">We supply highly quality organic products</p>
+              <button class="btn bg-[#F85559] text-white border-0">Shop Now</button>
+            </div>
+          </div>
+          <img src="./images/banner2.png" class="w-full h-full" />
+        
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2 z-10">
+            <a href="#slide1" class="btn btn-circle z-10 text-white bg-[#000] border-0">❮</a> 
+            <a href="#slide3" class="btn btn-circle z-10 text-white bg-[#000] border-0">❯</a>
+          </div>
+        </div>
+      </div> 
+      <div id="slide3" class="carousel-item relative w-full">
+        <div class="overlay-container">
+          <div class="hero-content text-center absolute flex justify-center align-center w-full h-full z-10">
+            <div class="max-w-md">
+              <h1 class="text-5xl font-bold text-white font-black	">Exotic tastes at your doorstep</h1>
+              <p class="py-6 text-white">We supply highly quality organic products</p>
+              <button class="btn bg-[#F85559] text-white border-0">Shop Now</button>
+            </div>
+          </div>
+          <img src="./images/banner3.png" class="w-full h-full" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2 z-10">
+            <a href="#slide4" class="btn btn-circle z-10 text-white bg-[#000] border-0">❮</a> 
+            <a href="#slide2" class="btn btn-circle z-10 text-white bg-[#000] border-0">❯</a>
+          </div>
+        </div>
+      </div> 
+      <div id="slide4" class="carousel-item relative w-full">
+        <div class="overlay-container">
+          <div class="hero-content text-center absolute flex justify-center align-center w-full h-full z-10">
+            <div class="max-w-md">
+              <h1 class="text-5xl font-bold text-white font-black	">Exotic tastes at your doorstep</h1>
+              <p class="py-6 text-white">We supply highly quality organic products</p>
+              <button class="btn bg-[#F85559] text-white border-0">Shop Now</button>
+            </div>
+          </div>
+          <img src="./images/banner4.png" class="w-full h-full" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2 z-10">
+            <a href="#slide3" class="btn btn-circle z-10 text-white bg-[#000] border-0">❮</a> 
+            <a href="#slide1" class="btn btn-circle z-10 text-white bg-[#000] border-0">❯</a>
+          </div>
+        </div>
+      </div>
+    </div>
 
 
     <!-- hero section end  -->

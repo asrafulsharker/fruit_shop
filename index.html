@@ -31,6 +31,14 @@
       /* Adjust the color and opacity as needed */
       z-index: 1;
     }
+
+    @media only screen and (max-width: 770px) {
+      .flex-col-reverse {
+    flex-direction: column-reverse !important;
+}
+}
+    
+    
   </style>
 </head>
 
@@ -755,11 +763,11 @@
       <p class="text-center">Contrary to popular belief, is not simply random text. It has roots in a piece of classical
         <br> Latin literature from 45 BC, making it over 2000 years old.
       </p>
-      <div class="choose_part flex flex-wrap  mt-10 mb-10">
+      <div class="choose_part flex   mt-10 mb-10">
         <div class="flex gap-6">
           <div class="flex space-x-10 flex-wrap items-center justify-center">
             <div class="why_1 mt-5">
-              <div class="flex">
+              <div class="flex sm:flex-col lg:flex-row md:flex-row sm:justify-center sm:items-center">
                 <div class="icon_round p-3 bg-[#1212121A] rounded-full w-12  h-12">
                   <svg class="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                     fill="none">
@@ -769,17 +777,17 @@
                   </svg>
                 </div>
                 <div class="">
-                  <div class="ml-2">
+                  <div class="ml-2 sm:justify-center sm:items-center flex flex-col lg:justify-start lg:items-start md:justify-start md:items-start">
                     <p class="text-2xl font-bold  mb-2 ">Dedicated Team</p>
                     <hr class="border-1 border-black w-1/2">
-                    <p class="mt-2">Professional employees are there for you to pick <br>the most amazing and fresh
+                    <p class="mt-2 sm:text-center lg:text-left md:text-left">Professional employees are there for you to pick <br>the most amazing and fresh
                       fruits.
                     </p>
                   </div>
 
                 </div>
               </div>
-              <div class="flex mt-5">
+              <div class="flex mt-5 sm:flex-col lg:flex-row md:flex-row sm:justify-center sm:items-center">
                 <div class="icon_round p-3 bg-[#1212121A] rounded-full w-12  h-12">
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                     <path
@@ -788,17 +796,17 @@
                   </svg>
                 </div>
                 <div class="">
-                  <div class="ml-2">
+                  <div class="ml-2 sm:justify-center sm:items-center flex flex-col lg:justify-start lg:items-start md:justify-start md:items-start">
                     <p class="text-2xl font-bold  mb-2 ">Fresh is Best</p>
                     <hr class="border-1 border-black w-1/2">
-                    <p class="mt-2">Professional employees are there for you to pick <br>the most amazing and fresh
+                    <p class="mt-2 sm:text-center lg:text-left md:text-left">Professional employees are there for you to pick <br>the most amazing and fresh
                       fruits.
                     </p>
                   </div>
 
                 </div>
               </div>
-              <div class="flex mt-5">
+              <div class="flex mt-5 sm:flex-col lg:flex-row md:flex-row sm:justify-center sm:items-center">
                 <div class="icon_round p-3 bg-[#1212121A] rounded-full w-12  h-12">
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                     <g clip-path="url(#clip0_13_2840)">
@@ -847,10 +855,10 @@
                   </svg>
                 </div>
                 <div class="">
-                  <div class="ml-2">
+                  <div class="ml-2 sm:justify-center sm:items-center flex flex-col lg:justify-start lg:items-start md:justify-start md:items-start">
                     <p class="text-2xl font-bold  mb-2 ">Gift Certificates</p>
                     <hr class="border-1 border-black w-1/2">
-                    <p class="mt-2">Professional employees are there for you to pick <br>the most amazing and fresh
+                    <p class="mt-2 sm:text-center lg:text-left md:text-left">Professional employees are there for you to pick <br>the most amazing and fresh
                       fruits.
                     </p>
                   </div>
@@ -863,13 +871,13 @@
               <img src="./images/whychoose1.png" alt="">
             </div>
             <div class="why_1 mt-5">
-              <div class="flex">
+              <div class="flex  sm:flex-col lg:flex-row md:flex-row sm:justify-center sm:items-center flex-col-reverse">
 
                 <div class="">
-                  <div class="mr-2 flex items-end flex-col ">
+                  <div class="  mr-2 sm:justify-center sm:items-center flex flex-col lg:justify-end lg:items-end md:justify-end md:items-end">
                     <p class="text-2xl font-bold  mb-2 ">Dedicated Team</p>
                     <hr class="border-1 border-black w-1/2">
-                    <p class="mt-2 text-right">Professional employees are there for you to pick <br>the most amazing and
+                    <p class="mt-2 text-right sm:text-center lg:text-right md:text-right">Professional employees are there for you to pick <br>the most amazing and
                       fresh fruits.
                     </p>
                   </div>
@@ -917,13 +925,13 @@
                   </svg>
                 </div>
               </div>
-              <div class="flex mt-5">
+              <div class="flex mt-5 sm:flex-col lg:flex-row md:flex-row sm:justify-center sm:items-center flex-col-reverse">
 
                 <div class="">
-                  <div class="mr-2 flex items-end flex-col">
+                  <div class="  mr-2 sm:justify-center sm:items-center flex flex-col lg:justify-end lg:items-end md:justify-end md:items-end">
                     <p class="text-2xl font-bold  mb-2 ">Fresh is Best</p>
                     <hr class="border-1 border-black w-1/2">
-                    <p class="mt-2 text-right">Professional employees are there for you to pick <br>the most amazing and
+                    <p class="text-right sm:text-center lg:text-right md:text-right">Professional employees are there for you to pick <br>the most amazing and
                       fresh fruits.
                     </p>
                   </div>
@@ -940,13 +948,14 @@
                   </svg>
                 </div>
               </div>
-              <div class="flex mt-5">
+              <div class="flex mt-5 sm:flex-col lg:flex-row md:flex-row sm:justify-center sm:items-center flex-col-reverse">
 
-                <div class="">
-                  <div class="mr-2 flex items-end flex-col ">
+                <div class="">             
+
+                  <div class="  mr-2 sm:justify-center sm:items-center flex flex-col lg:justify-end lg:items-end md:justify-end md:items-end">
                     <p class="text-2xl font-bold  mb-2 ">Gift Certificates</p>
                     <hr class="border-1 border-black w-1/2">
-                    <p class="mt-2 text-right">Professional employees are there for you to pick <br>the most amazing and
+                    <p class="text-right sm:text-center lg:text-right md:text-right">Professional employees are there for you to pick <br>the most amazing and
                       fresh fruits.
                     </p>
                   </div>
